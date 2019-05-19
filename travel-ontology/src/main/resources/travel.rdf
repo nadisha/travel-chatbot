@@ -1,0 +1,1226 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#"
+     xml:base="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#hasAccommodation -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#hasAccommodation">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#TourPackage"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#BedAndBreakfast"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#hasActivity -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#hasActivity">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#Destination"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#TourPackage"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#Activity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#hasArea -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#hasArea">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#Destination"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#Region"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#TourPackage"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#Area"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#hasBestTime -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#hasBestTime">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#Destination"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#Season"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#hasCost -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#hasCost">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#TourPackage"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#Budget"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#hasDestination -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#hasDestination">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#TourPackage"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#Destination"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#hasRegion -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#hasRegion">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#Destination"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#Region"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#hasShow -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#hasShow">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#TourPackage"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#Show"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#hasAddress -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#hasAddress">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#Destination"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#hasCurrency -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#hasCurrency">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#Budget"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#hasDayCount -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#hasDayCount">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#TourPackage"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#hasDescription -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#hasDescription">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#Destination"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#Season"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#TourPackage"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#hasEndMonth -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#hasEndMonth">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#Season"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#hasEndTime -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#hasEndTime">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#Show"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#hasMaxGroupSize -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#hasMaxGroupSize">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#TourPackage"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#hasMinGroupSize -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#hasMinGroupSize">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#TourPackage"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#hasName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#hasName">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#Activity"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#Area"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#Destination"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#Season"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#Show"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#hasNightCount -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#hasNightCount">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#TourPackage"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#hasPerAdultCharge -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#hasPerAdultCharge">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#Budget"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#hasPerChildCharge -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#hasPerChildCharge">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#Budget"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#hasStarRate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#hasStarRate">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#Hotel"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#hasStartMonth -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#hasStartMonth">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#Season"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#hasStartTime -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#hasStartTime">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#Show"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#is24Hour -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#is24Hour">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#Show"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#isFreeOfCharge -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#isFreeOfCharge">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#Budget"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#Accommodation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#Accommodation"/>
+    
+
+
+    <!-- http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#Activity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#Activity"/>
+    
+
+
+    <!-- http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#AncientCities -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#AncientCities">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#Region"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#AnimalShow -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#AnimalShow">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#Show"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#Area -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#Area"/>
+    
+
+
+    <!-- http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#Beach -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#Beach">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#Destination"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#BeachTourPackage -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#BeachTourPackage">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#TourPackage"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#BedAndBreakfast -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#BedAndBreakfast">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#Hotel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#BicycleRide -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#BicycleRide">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#Sport"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#BirdWatching -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#BirdWatching">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#Activity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#BoatSafary -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#BoatSafary">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#Activity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#BotanicalGarden -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#BotanicalGarden">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#Garden"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#BuddhistTemple -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#BuddhistTemple">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#Temple"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#Budget -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#Budget"/>
+    
+
+
+    <!-- http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#CasinoAndGambling -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#CasinoAndGambling">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#Destination"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#Cathedral -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#Cathedral">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#ReligiousDestination"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#ChimpanzeePerformance -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#ChimpanzeePerformance">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#AnimalShow"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#Cloth -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#Cloth">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#Shopping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#ColomboCityTourPackage -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#ColomboCityTourPackage">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#TourPackage"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#ColomboRegion -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#ColomboRegion">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#Region"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#CulturalAndHeritagePackage -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#CulturalAndHeritagePackage">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#TourPackage"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#CulturalDestination -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#CulturalDestination">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#Destination"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#CulturalShow -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#CulturalShow">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#Show"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#Destination -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#Destination"/>
+    
+
+
+    <!-- http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#EastCoastRegion -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#EastCoastRegion">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#Region"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#ElephantOrphanage -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#ElephantOrphanage">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#ZoologicalGarden"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#ElephantPerformance -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#ElephantPerformance">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#AnimalShow"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#Gambling -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#Gambling">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#Activity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#Garden -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#Garden">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#Destination"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#Gem -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#Gem">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#Shopping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#Handicraft -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#Handicraft">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#CulturalDestination"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#HighCountryRegion -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#HighCountryRegion">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#Region"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#HinduTemple -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#HinduTemple">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#Temple"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#HistoricalDestination -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#HistoricalDestination">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#Destination"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#HoneymoonPackage -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#HoneymoonPackage">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#TourPackage"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#Hotel -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#Hotel">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#Accommodation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#Jewellery -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#Jewellery">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#Shopping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#Lake -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#Lake">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#Natural"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#Lighthouse -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#Lighthouse">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#Destination"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#LiveBetting -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#LiveBetting">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#Gambling"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#Meditation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#Meditation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#Relaxation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#Mosque -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#Mosque">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#ReligiousDestination"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#Museum -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#Museum">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#CulturalDestination"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#NationalPark -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#NationalPark">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#Wildlife"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#NationalZoologicalGarden -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#NationalZoologicalGarden">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#ZoologicalGarden"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#Natural -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#Natural">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#Destination"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#Other -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#Other">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#Region"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#PilgrimagePackage -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#PilgrimagePackage">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#TourPackage"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#PlayPoker -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#PlayPoker">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#Gambling"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#PuppetShow -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#PuppetShow">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#Show"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#Reading -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#Reading">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#Relaxation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#Region -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#Region"/>
+    
+
+
+    <!-- http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#Relaxation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#Relaxation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#Activity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#ReligiousDestination -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#ReligiousDestination">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#Destination"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#Rowing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#Rowing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#Sport"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#RoyalBotanicalGarden -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#RoyalBotanicalGarden">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#BotanicalGarden"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#SealionPerformance -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#SealionPerformance">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#AnimalShow"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#Season -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#Season"/>
+    
+
+
+    <!-- http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#Shopping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#Shopping">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#Activity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#ShoppingComplex -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#ShoppingComplex">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#Destination"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#Show -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#Show"/>
+    
+
+
+    <!-- http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#SouthCoastRegion -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#SouthCoastRegion">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#Region"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#Souvenir -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#Souvenir">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#Shopping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#Sport -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#Sport">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#Activity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#Surfing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#Surfing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#Sport"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#TailormadePackage -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#TailormadePackage">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#TourPackage"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#Temple -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#Temple">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#ReligiousDestination"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#TourPackage -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#TourPackage"/>
+    
+
+
+    <!-- http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#WatchingSunset -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#WatchingSunset">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#Relaxation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#Waterfall -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#Waterfall">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#Natural"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#WestCoastRegion -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#WestCoastRegion">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#Region"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#WildSafary -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#WildSafary">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#Activity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#Wildlife -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#Wildlife">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#Destination"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#WildlifePackage -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#WildlifePackage">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#TourPackage"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#ZoologicalGarden -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#ZoologicalGarden">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#Garden"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#ActivityMeditation -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#ActivityMeditation">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#Meditation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#ActivityShoppingOdel -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#ActivityShoppingOdel">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#Cloth"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#Souvenir"/>
+        <hasEndTime rdf:datatype="http://www.w3.org/2001/XMLSchema#string">22:00</hasEndTime>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ODEL Colombo</hasName>
+        <hasStartTime rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10:00</hasStartTime>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#ChangeSeasionToFirstInterMonsoon -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#ChangeSeasionToFirstInterMonsoon">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#Season"/>
+        <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Thunderstorm type rainfall with warm and uncomfortable conditions</hasDescription>
+        <hasEndMonth rdf:datatype="http://www.w3.org/2001/XMLSchema#string">April</hasEndMonth>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">First Inter-monsoon Season</hasName>
+        <hasStartMonth rdf:datatype="http://www.w3.org/2001/XMLSchema#string">March</hasStartMonth>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#ChangeSeasonToAny -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#ChangeSeasonToAny">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#Season"/>
+        <hasEndMonth rdf:datatype="http://www.w3.org/2001/XMLSchema#string">December</hasEndMonth>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Any month of the year</hasName>
+        <hasStartMonth rdf:datatype="http://www.w3.org/2001/XMLSchema#string">January</hasStartMonth>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#ChangeSeasonToNortheastMonsoon -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#ChangeSeasonToNortheastMonsoon">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#Season"/>
+        <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The warm season is eased away by the windy weather during this particular monsoon season. Rains can be expected during any time of the day</hasDescription>
+        <hasEndMonth rdf:datatype="http://www.w3.org/2001/XMLSchema#string">September</hasEndMonth>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Northeast-Monsoon Season</hasName>
+        <hasStartMonth rdf:datatype="http://www.w3.org/2001/XMLSchema#string">May</hasStartMonth>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#ChangeSeasonToSecondInterMonsoon -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#ChangeSeasonToSecondInterMonsoon">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#Season"/>
+        <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rains occur with thunder storms while the influence of the weather system like depression and cyclones in the Bay of Bengal is considered to be common. The whole island experiences wide spread rain with strong winds</hasDescription>
+        <hasEndMonth rdf:datatype="http://www.w3.org/2001/XMLSchema#string">November</hasEndMonth>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Second Inter-monsoon Season</hasName>
+        <hasStartMonth rdf:datatype="http://www.w3.org/2001/XMLSchema#string">October</hasStartMonth>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#ChangeSeasonToSouthwestMonsoon -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#ChangeSeasonToSouthwestMonsoon">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#Season"/>
+        <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cold and dry windy weather can be expected during this season while cloud free and days filled with sunshine can be expected. Rain can be expected in several parts of the island as well.</hasDescription>
+        <hasEndMonth rdf:datatype="http://www.w3.org/2001/XMLSchema#string">February</hasEndMonth>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Southwest-Monsoon Season</hasName>
+        <hasStartMonth rdf:datatype="http://www.w3.org/2001/XMLSchema#string">December</hasStartMonth>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#EnterFreeOfCharge -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#EnterFreeOfCharge">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#Budget"/>
+        <isFreeOfCharge rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isFreeOfCharge>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#EnterToDutchMuseum -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#EnterToDutchMuseum">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#Budget"/>
+        <hasCurrency rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LKR</hasCurrency>
+        <hasPerAdultCharge rdf:datatype="http://www.w3.org/2001/XMLSchema#double">500.0</hasPerAdultCharge>
+        <hasPerChildCharge rdf:datatype="http://www.w3.org/2001/XMLSchema#double">300.0</hasPerChildCharge>
+        <isFreeOfCharge rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isFreeOfCharge>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#EnterToKelaniyaTemple -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#EnterToKelaniyaTemple">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#Budget"/>
+        <isFreeOfCharge rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isFreeOfCharge>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#EnterToNationalMuseum -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#EnterToNationalMuseum">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#Budget"/>
+        <hasCurrency rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LKR</hasCurrency>
+        <hasPerAdultCharge rdf:datatype="http://www.w3.org/2001/XMLSchema#double">500.0</hasPerAdultCharge>
+        <hasPerChildCharge rdf:datatype="http://www.w3.org/2001/XMLSchema#double">300.0</hasPerChildCharge>
+        <isFreeOfCharge rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isFreeOfCharge>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#EnterToPuppetArtMuseum -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#EnterToPuppetArtMuseum">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#Budget"/>
+        <hasCurrency rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LKR</hasCurrency>
+        <hasPerAdultCharge rdf:datatype="http://www.w3.org/2001/XMLSchema#double">100.0</hasPerAdultCharge>
+        <hasPerChildCharge rdf:datatype="http://www.w3.org/2001/XMLSchema#double">50.0</hasPerChildCharge>
+        <isFreeOfCharge rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isFreeOfCharge>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#EnterToPuppetShow -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#EnterToPuppetShow">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#Budget"/>
+        <hasCurrency rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LKR</hasCurrency>
+        <hasPerAdultCharge rdf:datatype="http://www.w3.org/2001/XMLSchema#double">500.0</hasPerAdultCharge>
+        <hasPerChildCharge rdf:datatype="http://www.w3.org/2001/XMLSchema#double">400.0</hasPerChildCharge>
+        <isFreeOfCharge rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isFreeOfCharge>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#EnterToSeemaMalaka -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#EnterToSeemaMalaka">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#Budget"/>
+        <isFreeOfCharge rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isFreeOfCharge>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#StayColombo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#StayColombo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#BedAndBreakfast"/>
+        <hasAddress rdf:datatype="http://www.w3.org/2001/XMLSchema#string">328 Galle Main Rd, Colombo 3</hasAddress>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Renuka City Hotel</hasName>
+        <hasStarRate rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</hasStarRate>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#TourColomboBudget -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#TourColomboBudget">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#Budget"/>
+        <hasCurrency rdf:datatype="http://www.w3.org/2001/XMLSchema#string">USD</hasCurrency>
+        <hasPerAdultCharge rdf:datatype="http://www.w3.org/2001/XMLSchema#double">100.0</hasPerAdultCharge>
+        <hasPerChildCharge rdf:datatype="http://www.w3.org/2001/XMLSchema#double">75.0</hasPerChildCharge>
+        <isFreeOfCharge rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isFreeOfCharge>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#TourOnColomboCulture -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#TourOnColomboCulture">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#CulturalAndHeritagePackage"/>
+        <hasAccommodation rdf:resource="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#StayColombo"/>
+        <hasActivity rdf:resource="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#ActivityShoppingOdel"/>
+        <hasArea rdf:resource="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#TravelToColombo"/>
+        <hasArea rdf:resource="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#TravelToMountLavinia"/>
+        <hasCost rdf:resource="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#TourColomboBudget"/>
+        <hasDestination rdf:resource="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#VisitColomboMosque"/>
+        <hasDestination rdf:resource="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#VisitDutchMuseum"/>
+        <hasDestination rdf:resource="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#VisitKelaniyaTemple"/>
+        <hasDestination rdf:resource="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#VisitNationalMuseum"/>
+        <hasDestination rdf:resource="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#VisitPuppetArtMuseum"/>
+        <hasDestination rdf:resource="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#VisitSeemaMalaka"/>
+        <hasShow rdf:resource="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#WatchPuppetShow"/>
+        <hasDayCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</hasDayCount>
+        <hasMaxGroupSize rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</hasMaxGroupSize>
+        <hasMinGroupSize rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</hasMinGroupSize>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2 Day Cultural Tour Around Colombo</hasName>
+        <hasNightCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasNightCount>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#TravelToColombo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#TravelToColombo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#Area"/>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Colombo</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#TravelToColomboRegion -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#TravelToColomboRegion">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#ColomboRegion"/>
+        <hasArea rdf:resource="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#TravelToColombo"/>
+        <hasArea rdf:resource="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#TravelToMountLavinia"/>
+        <hasArea rdf:resource="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#TravelToNegombo"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#TravelToMountLavinia -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#TravelToMountLavinia">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#Area"/>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mount Lavinia</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#TravelToNegombo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#TravelToNegombo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#Area"/>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Negombo</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#VisitColomboMosque -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#VisitColomboMosque">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#CulturalDestination"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#Mosque"/>
+        <hasArea rdf:resource="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#TravelToColombo"/>
+        <hasBestTime rdf:resource="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#ChangeSeasonToAny"/>
+        <hasCost rdf:resource="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#EnterFreeOfCharge"/>
+        <hasRegion rdf:resource="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#TravelToColomboRegion"/>
+        <hasAddress rdf:datatype="http://www.w3.org/2001/XMLSchema#string">No.228, Second Cross Street, 11, Colombo</hasAddress>
+        <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The first thing that you will notice about the grand mosque of Jami Ul-Alfar is that of its candy-like red and white striped exterior. Designed and constructed by Habibu Labbe Saibu Labbe, Jami Ul-Alfar Mosque stands tall as a witness to the cultural gems of Sri Lanka, and as a perfect amalgamation of four unique styles of architecture – Indian, Gothic, Neo-classical, and Indo-Islamic architecture.</hasDescription>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jami Ul-Alfar Mosque</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#VisitDutchMuseum -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#VisitDutchMuseum">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#Museum"/>
+        <hasArea rdf:resource="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#TravelToColombo"/>
+        <hasBestTime rdf:resource="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#ChangeSeasonToAny"/>
+        <hasCost rdf:resource="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#EnterToDutchMuseum"/>
+        <hasRegion rdf:resource="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#TravelToColomboRegion"/>
+        <hasAddress rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Prince Street, Pettah, Colombo</hasAddress>
+        <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Located right in the heart of Pettah market which is known for the best local shopping in Sri Lanka, the unique, and unusual-looking Dutch Museum, does come as a surprise to many travelers in Colombo. Having served as the mansion for the Dutch governor in the late 17th century, this is by far one of the best buildings that has been best preserved to showcase the charm of Dutch architecture.</hasDescription>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Colombo Dutch Museum</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#VisitKelaniyaTemple -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#VisitKelaniyaTemple">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#BuddhistTemple"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#CulturalDestination"/>
+        <hasActivity rdf:resource="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#ActivityMeditation"/>
+        <hasArea rdf:resource="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#TravelToColombo"/>
+        <hasBestTime rdf:resource="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#ChangeSeasonToAny"/>
+        <hasCost rdf:resource="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#EnterFreeOfCharge"/>
+        <hasRegion rdf:resource="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#TravelToColomboRegion"/>
+        <hasAddress rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Biyagama Road, Kelaniya, Colombo</hasAddress>
+        <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Standing tall despite being destroyed twice by Indian and Portugese invaders, it is said that Lord Buddha visited the current site of the temple when he visited the continent for the third time. Restored by the Dutch during the 18th century, this grand temple of Kelaniya Raja Maha Vihara today stands as a landmark of cultural charm amongst all the other tourist attractions in Colombo city.</hasDescription>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kelaniya Raja Maha Vihara</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#VisitNationalMuseum -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#VisitNationalMuseum">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#Museum"/>
+        <hasArea rdf:resource="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#TravelToColombo"/>
+        <hasBestTime rdf:resource="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#ChangeSeasonToAny"/>
+        <hasCost rdf:resource="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#EnterToNationalMuseum"/>
+        <hasRegion rdf:resource="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#TravelToColomboRegion"/>
+        <hasAddress rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sir Marcus Fernando Mawatha, Colombo</hasAddress>
+        <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Founded by the former British Governor Sir William Henry Gregory of Ceylon which is how Sri Lanka was popularly known, the National Museum of Colombo showcases the works of renowned artists that portrays the cultural heritage of the emerald nation. The museum exhibits 18th-century galleries which are full of intricate carvings, unique masks of demons, swords of the knights, and other art collection of local artists from the colonial era.</hasDescription>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">National Museum Of Colombo</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#VisitPuppetArtMuseum -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#VisitPuppetArtMuseum">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#Museum"/>
+        <hasArea rdf:resource="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#TravelToMountLavinia"/>
+        <hasBestTime rdf:resource="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#ChangeSeasonToAny"/>
+        <hasCost rdf:resource="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#EnterToPuppetArtMuseum"/>
+        <hasRegion rdf:resource="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#TravelToColomboRegion"/>
+        <hasAddress rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dehiwala</hasAddress>
+        <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Puppet shows hold a lot of meaning and importance in Sri Lankan culture. So this museum is single handedly responsible for upholding a lot of the fold tradition and values of the island country even to this day. Keep note that the demand for these places is really high and so it is better to just book your seats as early as you can. Perfect for all age groups, it is sure to bring entertainment and joy to many. The way the artists manage to flaunt and work with their attractive and multi colored puppets is a sight to behold in itself.</hasDescription>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Traditional Puppet Art Museum</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#VisitSeemaMalaka -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#VisitSeemaMalaka">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#CulturalDestination"/>
+        <hasArea rdf:resource="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#TravelToColombo"/>
+        <hasCost rdf:resource="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#EnterFreeOfCharge"/>
+        <hasRegion rdf:resource="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#TravelToColomboRegion"/>
+        <hasAddress rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sir James Pieris Mawatha, Colombo</hasAddress>
+        <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ever heard of an island temple? Offering the perfect respite from the hustle and bustle of the city, Seema Malaka is one of the few places to visit in Colombo for couples which exudes tropical charm. Designed by the renowned architect of Sri Lanka – Geoffrey Bawa, Seema Malaka temple strikes a perfect balance between Indian, Chinese, Thai, and Sri Lankan architecture, that holds a greater significance in maintaining peace amongst all the cultures.</hasDescription>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Seema Malaka</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#WatchPuppetShow -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#WatchPuppetShow">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#PuppetShow"/>
+        <hasCost rdf:resource="http://www.semanticweb.org/nadisha/ontologies/2019/2/travel#EnterToPuppetShow"/>
+        <hasAddress rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dehiwala</hasAddress>
+        <hasEndTime rdf:datatype="http://www.w3.org/2001/XMLSchema#string">17:00</hasEndTime>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Puppet Show</hasName>
+        <hasStartTime rdf:datatype="http://www.w3.org/2001/XMLSchema#string">15:30</hasStartTime>
+        <is24Hour rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</is24Hour>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi -->
+

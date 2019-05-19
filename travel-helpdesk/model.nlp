@@ -1,0 +1,1007 @@
+{
+  "settings": {
+    "languages": [
+      "en"
+    ],
+    "fullSearchWhenGuessed": false,
+    "useNlg": true,
+    "useNeural": true,
+    "useLRC": true
+  },
+  "languages": [
+    "en"
+  ],
+  "intentDomains": {
+    "greetings.bye": "default",
+    "greetings.hello": "default",
+    "travel.want": "default",
+    "travel.city": "default",
+    "travel.list.destinations": "default",
+    "travel.destination": "default"
+  },
+  "nerManager": {
+    "settings": {},
+    "threshold": 0.8,
+    "builtins": [
+      "Number",
+      "Ordinal",
+      "Percentage",
+      "Age",
+      "Currency",
+      "Dimension",
+      "Temperature",
+      "DateTime",
+      "PhoneNumber",
+      "IpAddress",
+      "Boolean",
+      "Email",
+      "Hashtag",
+      "URL"
+    ],
+    "namedEntities": {
+      "city": {
+        "type": "enum",
+        "name": "city",
+        "localeFallback": {
+          "*": "en"
+        },
+        "locales": {
+          "en": {
+            "Colombo": [
+              "Colombo"
+            ],
+            "Kandy": [
+              "Kandy"
+            ]
+          }
+        }
+      },
+      "destinantion": {
+        "type": "enum",
+        "name": "destinantion",
+        "localeFallback": {
+          "*": "en"
+        },
+        "locales": {
+          "en": {
+            "Jami Ul-Alfar Mosque": [
+              "Jami Ul-Alfar Mosque"
+            ],
+            "Colombo Dutch Museum": [
+              "Colombo Dutch Museum"
+            ],
+            "Kelaniya Raja Maha Vihara": [
+              "Kelaniya Raja Maha Vihara"
+            ],
+            "National Museum Of Colombo": [
+              "National Museum Of Colombo"
+            ],
+            "Traditional Puppet Art Museum": [
+              "Traditional Puppet Art Museum"
+            ],
+            "Seema Malaka": [
+              "Seema Malaka"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "slotManager": {
+    "travel.city": {
+      "city": {
+        "intent": "travel.city",
+        "entity": "city",
+        "mandatory": false,
+        "locales": {}
+      }
+    },
+    "travel.destination": {
+      "destinantion": {
+        "intent": "travel.destination",
+        "entity": "destinantion",
+        "mandatory": false,
+        "locales": {}
+      }
+    }
+  },
+  "classifiers": [
+    {
+      "language": "en",
+      "docs": [
+        {
+          "intent": "greetings.bye",
+          "utterance": [
+            "thank"
+          ]
+        },
+        {
+          "intent": "greetings.bye",
+          "utterance": [
+            "thank",
+            "you"
+          ]
+        },
+        {
+          "intent": "greetings.bye",
+          "utterance": [
+            "thank",
+            "you",
+            "for",
+            "your",
+            "help"
+          ]
+        },
+        {
+          "intent": "greetings.bye",
+          "utterance": [
+            "thank",
+            "for",
+            "the",
+            "inform"
+          ]
+        },
+        {
+          "intent": "greetings.bye",
+          "utterance": [
+            "thank",
+            "bye"
+          ]
+        },
+        {
+          "intent": "greetings.bye",
+          "utterance": [
+            "thank",
+            "you",
+            "bye"
+          ]
+        },
+        {
+          "intent": "greetings.bye",
+          "utterance": [
+            "bye"
+          ]
+        },
+        {
+          "intent": "greetings.hello",
+          "utterance": [
+            "hello"
+          ]
+        },
+        {
+          "intent": "greetings.hello",
+          "utterance": [
+            "hi"
+          ]
+        },
+        {
+          "intent": "greetings.hello",
+          "utterance": [
+            "howdi"
+          ]
+        },
+        {
+          "intent": "travel.want",
+          "utterance": [
+            "want",
+            "to",
+            "travel"
+          ]
+        },
+        {
+          "intent": "travel.city",
+          "utterance": [
+            "i",
+            "would",
+            "like",
+            "to",
+            "travel",
+            "citi"
+          ]
+        },
+        {
+          "intent": "travel.city",
+          "utterance": [
+            "i",
+            "like",
+            "to",
+            "go",
+            "to",
+            "citi"
+          ]
+        },
+        {
+          "intent": "travel.city",
+          "utterance": [
+            "i",
+            "want",
+            "to",
+            "travel",
+            "citi"
+          ]
+        },
+        {
+          "intent": "travel.list.destinations",
+          "utterance": [
+            "yes"
+          ]
+        },
+        {
+          "intent": "travel.destination",
+          "utterance": [
+            "destinant"
+          ]
+        }
+      ],
+      "features": {
+        "thank": 6,
+        "you": 3,
+        "for": 2,
+        "your": 1,
+        "help": 1,
+        "the": 1,
+        "inform": 1,
+        "bye": 3,
+        "hello": 1,
+        "hi": 1,
+        "howdi": 1,
+        "want": 2,
+        "to": 5,
+        "travel": 3,
+        "i": 3,
+        "would": 1,
+        "like": 2,
+        "citi": 3,
+        "go": 1,
+        "yes": 1,
+        "destinant": 1
+      },
+      "logistic": {
+        "observations": {
+          "greetings.bye": [
+            [],
+            [
+              1
+            ],
+            [
+              1,
+              2,
+              3,
+              4
+            ],
+            [
+              2,
+              5,
+              6
+            ],
+            [
+              7
+            ],
+            [
+              1,
+              7
+            ],
+            [
+              7
+            ]
+          ],
+          "greetings.hello": [
+            [
+              8
+            ],
+            [
+              9
+            ],
+            [
+              10
+            ]
+          ],
+          "travel.want": [
+            [
+              11,
+              12,
+              13
+            ]
+          ],
+          "travel.city": [
+            [
+              12,
+              13,
+              14,
+              15,
+              16,
+              17
+            ],
+            [
+              12,
+              14,
+              16,
+              17,
+              18
+            ],
+            [
+              11,
+              12,
+              13,
+              14,
+              17
+            ]
+          ],
+          "travel.list.destinations": [
+            [
+              19
+            ]
+          ],
+          "travel.destination": [
+            [
+              20
+            ]
+          ]
+        },
+        "labels": [
+          "greetings.bye",
+          "greetings.hello",
+          "travel.want",
+          "travel.city",
+          "travel.list.destinations",
+          "travel.destination"
+        ],
+        "observationCount": 16,
+        "theta": [
+          {
+            "elements": [
+              5.176113656494925,
+              1.6209376673857543,
+              1.0390312995813762,
+              0.38495870639576607,
+              0.38495870639576607,
+              0.6540725931856091,
+              0.6540725931856091,
+              4.749028267115393,
+              -1.9075514142384402,
+              -1.9075514142384402,
+              -1.9075514142384402,
+              -0.8595294814793388,
+              -1.4770445232511664,
+              -1.107228740152313,
+              -0.8779984577324578,
+              -0.24769925867297457,
+              -0.6175150417718286,
+              -0.8779984577324578,
+              -0.36981578309885366,
+              -1.9075514142384402,
+              -1.9075514142384402
+            ]
+          },
+          {
+            "elements": [
+              -3.3969645804488717,
+              -1.212422201169767,
+              -0.798171896873118,
+              -0.3136464341913324,
+              -0.3136464341913324,
+              -0.4845254626817863,
+              -0.4845254626817863,
+              -2.828642442681627,
+              3.9706488424181083,
+              3.9706488424181083,
+              3.9706488424181083,
+              -1.0663682050485401,
+              -1.793875876953975,
+              -1.3411935612933366,
+              -1.0140748056079334,
+              -0.27482535624479726,
+              -0.7275076719054342,
+              -1.0140748056079334,
+              -0.4526823156606374,
+              -2.681215613518489,
+              -2.681215613518489
+            ]
+          },
+          {
+            "elements": [
+              -1.6128218725246621,
+              -0.6874689635529541,
+              -0.45536064402038234,
+              -0.19991402946327047,
+              -0.19991402946327047,
+              -0.25544661455711215,
+              -0.25544661455711215,
+              -1.0457757549085196,
+              -0.7351214712589526,
+              -0.7351214712589526,
+              -0.7351214712589526,
+              2.5015037226982764,
+              1.894930224338611,
+              2.1283907167481324,
+              -2.8097098110113863,
+              -0.3731130059501433,
+              -0.6065734983596641,
+              -2.8097098110113863,
+              -0.2334604924095207,
+              -0.7351214712589526,
+              -0.7351214712589526
+            ]
+          },
+          {
+            "elements": [
+              -1.5170707969486443,
+              -0.6559835868590796,
+              -0.43425658636520503,
+              -0.1926296418538884,
+              -0.1926296418538884,
+              -0.24162694451131675,
+              -0.24162694451131675,
+              -0.9607172318979842,
+              -0.643923663968843,
+              -0.643923663968843,
+              -0.643923663968843,
+              -0.2641852089870383,
+              1.0655033280839916,
+              0.34172210166809075,
+              3.111603946802647,
+              0.6059073106551294,
+              1.3296885370710294,
+              3.111603946802647,
+              0.7237812264159005,
+              -0.643923663968843,
+              -0.643923663968843
+            ]
+          },
+          {
+            "elements": [
+              -2.0114488313547723,
+              -0.819268189939114,
+              -0.5430323861769939,
+              -0.23087290361943194,
+              -0.23087290361943194,
+              -0.3121594825575617,
+              -0.3121594825575617,
+              -1.4037587758493264,
+              -1.1151760194985483,
+              -1.1151760194985483,
+              -1.1151760194985483,
+              -0.6248152409194665,
+              -1.105314215310439,
+              -0.8290651369369973,
+              -0.6951260948004333,
+              -0.20424989601753055,
+              -0.4804989743909733,
+              -0.6951260948004333,
+              -0.2762490783734428,
+              5.476992319648678,
+              -1.1151760194985483
+            ]
+          },
+          {
+            "elements": [
+              -2.0114488313547723,
+              -0.819268189939114,
+              -0.5430323861769939,
+              -0.23087290361943194,
+              -0.23087290361943194,
+              -0.3121594825575617,
+              -0.3121594825575617,
+              -1.4037587758493264,
+              -1.1151760194985483,
+              -1.1151760194985483,
+              -1.1151760194985483,
+              -0.6248152409194665,
+              -1.105314215310439,
+              -0.8290651369369973,
+              -0.6951260948004333,
+              -0.20424989601753055,
+              -0.4804989743909733,
+              -0.6951260948004333,
+              -0.2762490783734428,
+              -1.1151760194985483,
+              5.476992319648678
+            ]
+          }
+        ]
+      },
+      "useLRC": true,
+      "useNeural": true,
+      "neuralClassifier": {
+        "settings": {
+          "config": {
+            "activation": "leaky-relu",
+            "hiddenLayers": [],
+            "learningRate": 0.1,
+            "errorThresh": 0.0005,
+            "timeout": 20000
+          }
+        },
+        "classifierMap": {
+          "greetings.bye": {
+            "sizes": [
+              21,
+              1
+            ],
+            "layers": [
+              {
+                "thank": {},
+                "you": {},
+                "for": {},
+                "your": {},
+                "help": {},
+                "the": {},
+                "inform": {},
+                "bye": {},
+                "hello": {},
+                "hi": {},
+                "howdi": {},
+                "want": {},
+                "to": {},
+                "travel": {},
+                "i": {},
+                "would": {},
+                "like": {},
+                "citi": {},
+                "go": {},
+                "yes": {},
+                "destinant": {}
+              },
+              {
+                "0": {
+                  "bias": 79.88363647460938,
+                  "weights": {
+                    "thank": 15.500131607055664,
+                    "you": -0.5434637069702148,
+                    "for": 2.3876638412475586,
+                    "your": 1.5072137117385864,
+                    "help": 1.3284848928451538,
+                    "the": 0.9832056760787964,
+                    "inform": 1.2959792613983154,
+                    "bye": 10.177360534667969,
+                    "hello": -78.50383758544922,
+                    "hi": -78.50234985351562,
+                    "howdi": -78.50086212158203,
+                    "want": -22.454504013061523,
+                    "to": -33.513389587402344,
+                    "travel": -23.54131507873535,
+                    "i": -12.547750473022461,
+                    "would": -1.2425222396850586,
+                    "like": -11.254281997680664,
+                    "citi": -12.54323959350586,
+                    "go": -9.842633247375488,
+                    "yes": -78.49876403808594,
+                    "destinant": -78.49716186523438
+                  }
+                }
+              }
+            ],
+            "outputLookup": false,
+            "inputLookup": true,
+            "activation": "leaky-relu",
+            "trainOpts": {
+              "iterations": 20000,
+              "errorThresh": 0.0005,
+              "log": false,
+              "logPeriod": 10,
+              "learningRate": 0.1,
+              "momentum": 0.1,
+              "callbackPeriod": 10,
+              "timeout": 120000,
+              "beta1": 0.9,
+              "beta2": 0.999,
+              "epsilon": 1e-8
+            }
+          },
+          "greetings.hello": {
+            "sizes": [
+              21,
+              1
+            ],
+            "layers": [
+              {
+                "thank": {},
+                "you": {},
+                "for": {},
+                "your": {},
+                "help": {},
+                "the": {},
+                "inform": {},
+                "bye": {},
+                "hello": {},
+                "hi": {},
+                "howdi": {},
+                "want": {},
+                "to": {},
+                "travel": {},
+                "i": {},
+                "would": {},
+                "like": {},
+                "citi": {},
+                "go": {},
+                "yes": {},
+                "destinant": {}
+              },
+              {
+                "0": {
+                  "bias": 35.6926155090332,
+                  "weights": {
+                    "thank": -33.73835754394531,
+                    "you": -8.454299926757812,
+                    "for": -4.675414085388184,
+                    "your": -1.493791103363037,
+                    "help": -1.6020759344100952,
+                    "the": -3.294922113418579,
+                    "inform": -3.235804796218872,
+                    "bye": -32.72188186645508,
+                    "hello": 60.44892120361328,
+                    "hi": 60.44529724121094,
+                    "howdi": 60.41087341308594,
+                    "want": -9.9617280960083,
+                    "to": -14.834031105041504,
+                    "travel": -10.863541603088379,
+                    "i": -6.356889724731445,
+                    "would": -1.3375391960144043,
+                    "like": -4.854240894317627,
+                    "citi": -6.320261478424072,
+                    "go": -3.6855955123901367,
+                    "yes": -32.379398345947266,
+                    "destinant": -32.37531280517578
+                  }
+                }
+              }
+            ],
+            "outputLookup": false,
+            "inputLookup": true,
+            "activation": "leaky-relu",
+            "trainOpts": {
+              "iterations": 20000,
+              "errorThresh": 0.0005,
+              "log": false,
+              "logPeriod": 10,
+              "learningRate": 0.1,
+              "momentum": 0.1,
+              "callbackPeriod": 10,
+              "timeout": 60000,
+              "beta1": 0.9,
+              "beta2": 0.999,
+              "epsilon": 1e-8
+            }
+          },
+          "travel.want": {
+            "sizes": [
+              21,
+              1
+            ],
+            "layers": [
+              {
+                "thank": {},
+                "you": {},
+                "for": {},
+                "your": {},
+                "help": {},
+                "the": {},
+                "inform": {},
+                "bye": {},
+                "hello": {},
+                "hi": {},
+                "howdi": {},
+                "want": {},
+                "to": {},
+                "travel": {},
+                "i": {},
+                "would": {},
+                "like": {},
+                "citi": {},
+                "go": {},
+                "yes": {},
+                "destinant": {}
+              },
+              {
+                "0": {
+                  "bias": 3.7688465118408203,
+                  "weights": {
+                    "thank": -3.6230897903442383,
+                    "you": -1.1289749145507812,
+                    "for": -0.5215083360671997,
+                    "your": -0.11858967691659927,
+                    "help": -0.22019916772842407,
+                    "the": -0.4878396689891815,
+                    "inform": -0.3899643123149872,
+                    "bye": -3.506056070327759,
+                    "hello": -3.453596591949463,
+                    "hi": -3.4620800018310547,
+                    "howdi": -3.4670565128326416,
+                    "want": 31.8011531829834,
+                    "to": 28.297426223754883,
+                    "travel": 28.916051864624023,
+                    "i": -43.76628875732422,
+                    "would": -3.0857796669006348,
+                    "like": -3.647245168685913,
+                    "citi": -43.83608627319336,
+                    "go": -0.4815598428249359,
+                    "yes": -3.4561307430267334,
+                    "destinant": -3.4547119140625
+                  }
+                }
+              }
+            ],
+            "outputLookup": false,
+            "inputLookup": true,
+            "activation": "leaky-relu",
+            "trainOpts": {
+              "iterations": 20000,
+              "errorThresh": 0.0005,
+              "log": false,
+              "logPeriod": 10,
+              "learningRate": 0.1,
+              "momentum": 0.1,
+              "callbackPeriod": 10,
+              "timeout": 40000,
+              "beta1": 0.9,
+              "beta2": 0.999,
+              "epsilon": 1e-8
+            }
+          },
+          "travel.city": {
+            "sizes": [
+              21,
+              1
+            ],
+            "layers": [
+              {
+                "thank": {},
+                "you": {},
+                "for": {},
+                "your": {},
+                "help": {},
+                "the": {},
+                "inform": {},
+                "bye": {},
+                "hello": {},
+                "hi": {},
+                "howdi": {},
+                "want": {},
+                "to": {},
+                "travel": {},
+                "i": {},
+                "would": {},
+                "like": {},
+                "citi": {},
+                "go": {},
+                "yes": {},
+                "destinant": {}
+              },
+              {
+                "0": {
+                  "bias": -5.205449104309082,
+                  "weights": {
+                    "thank": -3.578625202178955,
+                    "you": -1.63239586353302,
+                    "for": -0.9675505757331848,
+                    "your": -0.4591319262981415,
+                    "help": -0.2747533619403839,
+                    "the": -0.6264597773551941,
+                    "inform": -0.5816013216972351,
+                    "bye": -2.329972267150879,
+                    "hello": -1.568782925605774,
+                    "hi": -1.608890175819397,
+                    "howdi": -1.672919750213623,
+                    "want": 0.879107654094696,
+                    "to": 7.59379768371582,
+                    "travel": 2.4907171726226807,
+                    "i": 43.815887451171875,
+                    "would": 1.8807127475738525,
+                    "like": 6.664115905761719,
+                    "citi": 43.9337158203125,
+                    "go": 4.873096466064453,
+                    "yes": -1.719334602355957,
+                    "destinant": -1.6633676290512085
+                  }
+                }
+              }
+            ],
+            "outputLookup": false,
+            "inputLookup": true,
+            "activation": "leaky-relu",
+            "trainOpts": {
+              "iterations": 20000,
+              "errorThresh": 0.0005,
+              "log": false,
+              "logPeriod": 10,
+              "learningRate": 0.1,
+              "momentum": 0.1,
+              "callbackPeriod": 10,
+              "timeout": 30000,
+              "beta1": 0.9,
+              "beta2": 0.999,
+              "epsilon": 1e-8
+            }
+          },
+          "travel.list.destinations": {
+            "sizes": [
+              21,
+              1
+            ],
+            "layers": [
+              {
+                "thank": {},
+                "you": {},
+                "for": {},
+                "your": {},
+                "help": {},
+                "the": {},
+                "inform": {},
+                "bye": {},
+                "hello": {},
+                "hi": {},
+                "howdi": {},
+                "want": {},
+                "to": {},
+                "travel": {},
+                "i": {},
+                "would": {},
+                "like": {},
+                "citi": {},
+                "go": {},
+                "yes": {},
+                "destinant": {}
+              },
+              {
+                "0": {
+                  "bias": 11.857722282409668,
+                  "weights": {
+                    "thank": -10.997519493103027,
+                    "you": -2.7588484287261963,
+                    "for": -1.443286657333374,
+                    "your": -0.4450969994068146,
+                    "help": -0.6590564846992493,
+                    "the": -1.0404391288757324,
+                    "inform": -1.144028663635254,
+                    "bye": -10.51970386505127,
+                    "hello": -10.338850021362305,
+                    "hi": -10.3513822555542,
+                    "howdi": -10.353997230529785,
+                    "want": -3.219815969467163,
+                    "to": -4.850113868713379,
+                    "travel": -3.7469799518585205,
+                    "i": -2.1727190017700195,
+                    "would": -0.40065667033195496,
+                    "like": -1.556465983390808,
+                    "citi": -2.2134974002838135,
+                    "go": -1.1568670272827148,
+                    "yes": 79.89095306396484,
+                    "destinant": -10.359451293945312
+                  }
+                }
+              }
+            ],
+            "outputLookup": false,
+            "inputLookup": true,
+            "activation": "leaky-relu",
+            "trainOpts": {
+              "iterations": 20000,
+              "errorThresh": 0.0005,
+              "log": false,
+              "logPeriod": 10,
+              "learningRate": 0.1,
+              "momentum": 0.1,
+              "callbackPeriod": 10,
+              "timeout": 24000,
+              "beta1": 0.9,
+              "beta2": 0.999,
+              "epsilon": 1e-8
+            }
+          },
+          "travel.destination": {
+            "sizes": [
+              21,
+              1
+            ],
+            "layers": [
+              {
+                "thank": {},
+                "you": {},
+                "for": {},
+                "your": {},
+                "help": {},
+                "the": {},
+                "inform": {},
+                "bye": {},
+                "hello": {},
+                "hi": {},
+                "howdi": {},
+                "want": {},
+                "to": {},
+                "travel": {},
+                "i": {},
+                "would": {},
+                "like": {},
+                "citi": {},
+                "go": {},
+                "yes": {},
+                "destinant": {}
+              },
+              {
+                "0": {
+                  "bias": 11.893108367919922,
+                  "weights": {
+                    "thank": -11.019659996032715,
+                    "you": -2.8119056224823,
+                    "for": -1.6114567518234253,
+                    "your": -0.6019604802131653,
+                    "help": -0.4070091247558594,
+                    "the": -1.0921258926391602,
+                    "inform": -1.0687663555145264,
+                    "bye": -10.558390617370605,
+                    "hello": -10.38670825958252,
+                    "hi": -10.382003784179688,
+                    "howdi": -10.39568042755127,
+                    "want": -3.202741861343384,
+                    "to": -5.00385046005249,
+                    "travel": -3.6460459232330322,
+                    "i": -2.0987231731414795,
+                    "would": -0.4033161997795105,
+                    "like": -1.5851613283157349,
+                    "citi": -2.0595104694366455,
+                    "go": -1.2455559968948364,
+                    "yes": -10.385064125061035,
+                    "destinant": 79.86044311523438
+                  }
+                }
+              }
+            ],
+            "outputLookup": false,
+            "inputLookup": true,
+            "activation": "leaky-relu",
+            "trainOpts": {
+              "iterations": 20000,
+              "errorThresh": 0.0005,
+              "log": false,
+              "logPeriod": 10,
+              "learningRate": 0.1,
+              "momentum": 0.1,
+              "callbackPeriod": 10,
+              "timeout": 20000,
+              "beta1": 0.9,
+              "beta2": 0.999,
+              "epsilon": 1e-8
+            }
+          }
+        }
+      }
+    }
+  ],
+  "responses": {
+    "en": {
+      "greetings.bye": [
+        {
+          "response": "It is my pleasure to serve you"
+        },
+        {
+          "response": "See you soon!"
+        }
+      ],
+      "greetings.hello": [
+        {
+          "response": "How can I help you?"
+        }
+      ],
+      "travel.want": [
+        {
+          "response": "Where do you want to travel?"
+        }
+      ],
+      "travel.city": [
+        {
+          "response": "{{city}} is a good choice. Do you like to know the travel destinations in {{city}} ?"
+        }
+      ],
+      "travel.list.destinations": [
+        {
+          "response": "The destinantions are, <br/> []. <br/>If you like to know details of each destination, just type destination name"
+        }
+      ],
+      "travel.destination": [
+        {
+          "response": "[]"
+        }
+      ]
+    }
+  }
+}

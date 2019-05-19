@@ -1,0 +1,51 @@
+<div class="chat_window">
+	<div class="top_menu">
+		<div class="buttons">
+			<div class="button close"></div>
+			<div class="button minimize"></div>
+			<div class="button maximize"></div>
+		</div>
+		<div class="title">{{title}}</div>
+	</div>
+	<ul class="messages" #scrollMe>
+    <li *ngFor="let msg of messages" [class.left] = '!msg.isHuman' [class.right] = 'msg.isHuman' class=" message appeared">
+      <div class="avatar">
+        <img src="{{msg.avatarImg}}" width="60px" hight="60px"/>
+      </div>
+      <div class="text_wrapper">
+        <div class="text" [innerHTML]="msg.content">
+					
+        </div>
+      </div>
+    </li>
+  </ul>
+
+	<div class="bottom_wrapper clearfix">
+		<div class="message_input_wrapper">
+			<input [(ngModel)]="text" class="message_input" placeholder="Type your message here..." />
+		</div>
+		<div class="send_message">
+			<div class="icon"></div>
+			<div class="text" (click) = "sendMessage()">Send</div>
+		</div>
+	</div>
+</div>
+
+<div class="message_template">
+	<li class="message">
+		<div class="avatar"></div>
+		<div class="text_wrapper">
+			<div class="text"></div>
+		</div>
+	</li>
+</div>
+
+
+
+<!--The content below is only a placeholder and can be replaced.-->
+<!-- <div  class="chatform">
+  <app-message-list [messages]="messages"></app-message-list>
+  <app-message-form [message]="message" [messages]="messages"></app-message-form>
+</div> -->
+
+<!-- <router-outlet></router-outlet> -->
